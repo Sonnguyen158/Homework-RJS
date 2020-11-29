@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 770px;
+    height: 2500px;
+    background-color: #1c1c1c; 
+}
+
+.grid:after {
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #343434;
+    border: 1px hidden;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: white;
+}
+
+.grid-item:nth-child(2n+1) {
+    background-color: #424242;
+}
+
+
+.grid-item--width2 {
+    width: 205px;
+}
+
+.grid-item--width3 {
+    width: 310px;
+}
+
+.grid-item--height2 {
+    height: 205px;
+}
+
+.grid-item--height4 {
+    height: 415px;
+}
