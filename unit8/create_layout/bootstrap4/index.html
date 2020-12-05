@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <div class="header-wraper">
+        <div class="container">
+            <div class="header">
+                <div class="header__title">
+                    <span>ALTITURE</span>
+                    <span>BY FIXELARITY</span>
+                </div>
+
+                <div class="header__menu">
+                    <button>MENU <i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__content row">
+                <div class="col-xl-5 col-sm-12 p-0">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="col-xl-12 col-sm-6 p-0">
+                                <div class="content__item first">
+                                    <h4 class="text-center">SED LOREM</h4>
+                                    <p class="text-center">Sed egestas, ante vulputate volutpat vitae luctus metus lebero aliquam</p>
+                                    <button>MORE</button>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-sm-6 p-0">
+                                <div class="content__item">
+                                    <h4 class="text-center">AMET MAGNA</h4>
+                                    <p class="text-center">Fusce lancinia ipsum feugiat dolor sed matis tempus sed nullam</p>
+                                    <button>MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-sm-12 p-0 img">
+                    <img src="imgs/layout-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="container body__title p-0">
+            <div class="row">
+                <div class="col-xl-12 title">
+                    <h3>LOREM IPSUM DOLOR</h3>
+                    <p class="text-center">Sed egestas adipiscing</p>
+                </div>
+                <div class="col-xl-4 col-sm-12 content">
+                    <a href=""><i class="fas fa-camera fa-2x text-primary"></i></a>
+                    <h6>ULTRICES ALIQUAM</h6>
+                    <p class="text-center">Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+                </div>
+                <div class="col-xl-4 col-sm-12 content">
+                    <a href=""><i class="fab fa-telegram-plane fa-2x text-info"></i></a>
+                    <h6>LOREM SET NULLAM</h6>
+                    <p class="text-center">Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+                </div>
+                <div class="col-xl-4 col-sm-12 content">
+                    <a href=""><i class="fas fa-envelope fa-2x text-warning"></i></a>
+                    <h6>ALIQUAM FEUGIAT</h6>
+                    <p class="text-center">Lorem ipsum dolor sit amet nullam feugiat tempus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-0 slide">
+            <div id="carouselExampleControls" class="carousel slide display_desktop" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">  
+                        <img src="imgs/layout-3.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/layout-4.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/layout-5.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+            
+            <div class="container display_mobile">
+                <div class="row">
+                    <div class="col-sm-12 active">
+                        <img src="imgs/layout-3.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                     <div class="col-sm-12 active">
+                        <img src="imgs/layout-4.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                    <div class="col-sm-12 active">
+                        <img src="imgs/layout-5.jpg" alt="...">
+                        <h5>MAGNA TEMPUS</h5>
+                        <p>Adipiscing ullamcorper semper ut amec ac risus. Lorem sapien ut odio odio nunc. Ac adiping nibh portilior erat risus justo adipicing amet placerat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container body__bot">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-12 title d-flex justify-content-center flex-column align-items-center">
+                    <h3>SED TEMPUS ALIQUAM</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+
+                <div class="col-xl-10 content">
+                    <div class="row">
+                        <div class="col-xl-5 p-0 d-flex justify-content-center flex-column align-items-center">
+                            <h6>ALIQUAM</h6>
+                            <p class="text-center">Morbi in sem quis dui placetat ellentesque odio nisi euismod in haretra a ultricies in diamed rcuc consequat ipsum dolor</p>
+                            <button>MORE</button>
+                        </div>
+                        <div class="col-xl-7 p-0 img">
+                            <img src="imgs/layout-6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 p-0 img">
+                            <img src="imgs/layout-7.jpg" alt="">
+                        </div>
+                        <div class="col-xl-7 p-0 d-flex justify-content-center flex-column align-items-center">
+                            <h6>PELLENTESQUE FERMENTUM</h6>
+                            <p class="text-center">Eed egestas ante ei vulputate volutpat eros pede smeper est vitae luctus metus libero eu augue Morbi purus libero faucibus adipiscing commodo quis graida id est sed lectus Praesent elementum lorem ipsum blandid sti amet velvelit</p>
+                            <button>MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container footer__sign-up">
+            <h3>GET NOTIFIED</h3>
+            <p>Lorem ipsum dolor sit amet nullam</p>
+            <form class="sign-up" method="POST">
+                <input type="text" name="contact" placeholder="Email address">
+                <button>Sign up</button>
+            </form>
+        </div>
+
+        <div class="container footer__body">
+            <div class="row">
+                <div class="col-xl-3 menu">
+                    <h6>MAGNA</h6>
+                    <ul>
+                        <li>Aliquam tempus</li>
+                        <li>Ultrecies nul</li>
+                        <li>Gravida ultricies</li>
+                        <li>Commodo etiam</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 menu">
+                    <h6>FEUGIAT</h6>
+                    <ul>
+                        <li>Morbi sem lorem</li>
+                        <li>Praes sed dapi</li>
+                        <li>Sed adipis nullam</li>
+                        <li>Fus dolor lacinia</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 menu">
+                    <h6>TEMPUS</h6>
+                    <ul>
+                        <li>Donecnec etiam</li>
+                        <li>Aapibus sedun</li>
+                        <li>Namnulla tempus</li>
+                        <li>Morbi set amet</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 menu">
+                    <h6>ALIQUAM</h6>
+                    <ul>
+                        <li>Lorem pransent dia</li>
+                        <li>Nellentes ipsum</li>
+                        <li>Diamsed arcu dolor</li>
+                        <li>Sit amet cursus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer__bot">
+            <div class="contact">
+                <span>
+                    <i class="fas fa-home"></i>
+                    1234 Fictinal Steet #5432 Nashville
+                </span>
+                <span>
+                    TN 00000-0000
+                </span>
+                <span>
+                    <i class="fas fa-phone"></i>
+                    (000)000-0000
+                </span>
+                <span>
+                    <i class="fas fa-envelope"></i>
+                    info@untitled.ltd
+                </span>
+            </div>
+
+            <div class="footer__end text-center">
+                Untitled. All right reserved.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
