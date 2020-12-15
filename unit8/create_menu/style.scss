@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #eeeeee;
+}
+
+.deep-menu {
+    margin-left: 30px;
+    ul {
+        list-style: none;
+        width: 250px;
+        background-color: white;
+        li {
+            position: relative;
+            width: 250px;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            a {
+                width: 250px;
+                height: 80px;
+                color: #777;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                i {
+                    margin: 0 15px;
+                }
+                .content {
+                    .bold {
+                        font-weight: bold;
+                    }
+                }
+            }
+            a:hover {
+                color: orange;
+            }
+            
+            .sub-menu {
+                position: absolute;
+                left: 250px;
+                top: 0px;
+                width: 250px;
+                display: none;
+                border-bottom: 1px solid #eeeeee;
+                border-left: 5px solid orange;
+                li {
+                    width: 250px;
+                    height: 60px;
+                    background-color: white;
+                    .sub-menu2 {
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: 250px;
+                        width: 250px;
+                        border-left: 5px solid orange;
+                        li {
+                            position: relative;
+                            .sub-menu3 {
+                                display: none;
+                                position: absolute;
+                                top: 0px;
+                                left: 250px;
+                                width: 250px;
+                                border-left: 5px solid orange;
+                            }
+                        }
+                        li:hover {
+                            .sub-menu3 {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                li:first-child {
+                    a::after {
+                        content: "";
+                        position: absolute;
+                        left: -13px;
+                        width: 0px;
+                        height: 0px;
+                        border-top: 10px solid transparent;
+                        border-right: 10px solid orange;
+                        border-bottom: 10px solid transparent;
+                    }
+                }
+
+                li:hover {
+                    .sub-menu2 {
+                        display: block;
+                    }
+                }
+            }
+
+            form {
+                width: 200px;
+                height: 40px;
+                margin-left: 10px;
+                input {
+                    width: 150px;
+                    height: 40px;
+                    border: 1px solid #eeeeee;
+                    padding-left: 5px;
+                }
+                button {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    background-color: orange;
+                    border: none;
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+        li:hover {
+            .sub-menu {
+                display: block;
+            }
+        }
+        .active {
+            margin-left: -5px;
+            box-sizing: content-box;
+            border-left: 5px solid orange;
+            border-right: 5px solid orange;
+            a::after {
+                content: "";
+                position: absolute;
+                left: 242px;
+                width: 0px;
+                height: 0px;
+                border-top: 10px solid transparent;
+                border-right: 10px solid orange;
+                border-bottom: 10px solid transparent;
+            }
+            a::before {
+                content: "";
+                position: absolute;
+                left: -2px;
+                width: 0px;
+                height: 0px;
+                border-top: 10px solid transparent;
+                border-left: 10px solid orange;
+                border-bottom: 10px solid transparent;
+            }
+        }   
+    }
+}
