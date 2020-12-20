@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: #eeeeee;
+}
+
+.deep-menu {
+  margin-left: 30px;
+}
+.deep-menu ul {
+  list-style: none;
+  width: 250px;
+  background-color: white;
+}
+.deep-menu ul li {
+  position: relative;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.deep-menu ul li a {
+  width: 250px;
+  height: 80px;
+  color: #777;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.deep-menu ul li a i {
+  margin: 0 15px;
+}
+.deep-menu ul li a .content .bold {
+  font-weight: bold;
+}
+.deep-menu ul li a:hover {
+  color: orange;
+}
+.deep-menu ul li .sub-menu {
+  position: absolute;
+  left: 250px;
+  top: 0px;
+  width: 250px;
+  display: none;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 5px solid orange;
+}
+.deep-menu ul li .sub-menu li {
+  width: 250px;
+  height: 60px;
+  background-color: white;
+}
+.deep-menu ul li .sub-menu li .sub-menu2 {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: 250px;
+  border-left: 5px solid orange;
+}
+.deep-menu ul li .sub-menu li .sub-menu2 li {
+  position: relative;
+}
+.deep-menu ul li .sub-menu li .sub-menu2 li .sub-menu3 {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: 250px;
+  border-left: 5px solid orange;
+}
+.deep-menu ul li .sub-menu li .sub-menu2 li:hover .sub-menu3 {
+  display: block;
+}
+.deep-menu ul li .sub-menu li:first-child a::after {
+  content: "";
+  position: absolute;
+  left: -13px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid orange;
+  border-bottom: 10px solid transparent;
+}
+.deep-menu ul li .sub-menu li:hover .sub-menu2 {
+  display: block;
+}
+.deep-menu ul li form {
+  width: 200px;
+  height: 40px;
+  margin-left: 10px;
+}
+.deep-menu ul li form input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #eeeeee;
+  padding-left: 5px;
+}
+.deep-menu ul li form button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: orange;
+  border: none;
+}
+.deep-menu ul li form button i {
+  color: white;
+}
+.deep-menu ul li:hover .sub-menu {
+  display: block;
+}
+.deep-menu ul .active {
+  margin-left: -5px;
+  box-sizing: content-box;
+  border-left: 5px solid orange;
+  border-right: 5px solid orange;
+}
+.deep-menu ul .active a::after {
+  content: "";
+  position: absolute;
+  left: 242px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid orange;
+  border-bottom: 10px solid transparent;
+}
+.deep-menu ul .active a::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
