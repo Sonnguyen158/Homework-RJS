@@ -1,12 +1,11 @@
 // Bai1: Hãy viết 1 hàm nhập vào 2 array, kiểm tra xem 2 array có khớp 100% các value với nhau về cả giá trị và index không:
 const isEqual = (arr1, arr2) => {
-  if ( arr1.length !== arr2.length ) {
+  if (arr1.length !== arr2.length) {
     return false
   } 
-  for ( let i = 0; i < arr2.length; i++) {
+  for (let i = 0; i < arr2.length; i++) {
     return arr1[i] === arr2[i]
   }
-
 }
 
 
@@ -24,7 +23,7 @@ const arrayFlatten = arr => {
 // Bai3: Cắt nhỏ array thành nhiều đoạn, mỗi đoạn có n phần tử Viết 1 hàm, nhập vào 1 array 1 chiều và 1 số (vd là n) Hãy tạo array 2 chiều, với mỗi array con sẽ chứa n số trong array đã nhập:
 const divArray = (arr, n) => {
   const newArr = []
-  for (let i = 0; i < arr.length; i+=n ) {
+  for (let i = 0; i < arr.length; i+=n) {
     newArr.push(arr.slice(i, i+n))
   }
   return newArr
@@ -32,22 +31,42 @@ const divArray = (arr, n) => {
 }
 
 
-// Bai4: Viết 1 hàm, nhập vào ít nhất 1 array Tìm ra các phần tử xuất hiện trong tất cả các array truyền vào:
+// Bai4: Viết 1 hàm, nhập vào ít nhất 1 array. Tìm ra các phần tử xuất hiện trong tất cả các array truyền vào:
+const intersection = (...arrays) => {
+  if (!arrays.length) {
+    return []
+  }
 
+  if (arrays.length === 1) {
+    return arrays[0]
+  }
 
+  const result = []
+  const[arr1, arr2] = arrays
+  arr1.forEach(item1 => {
+    arr2.forEach(item2 => {
+      if(item1 === item2) {
+        result.push(item1)
+        arrays.splice(0, 2)
+        const items = intersection(result, ...arrays)
+        result = [...result, ...items]
+      }
+    })
+  })
 
-
+  return result
+}
 
 // Bai5: Sử dụng Date trong javascript:
 const compareDate = (newData) => {
   const data = new Date(newData)
-  const date = new Date(2020, 10, 30, 12, 30, 32)
-  if ( data.getTime() > date.getTime() ) {
-    return after
-  } else if ( data.getTime() < date.getTime() ) {
-    return before
+  const date = new Date(2020, 10, 30, 12, 30, 32, 0)
+  if (data.getTime() > date.getTime()) {
+    return 'after'
+  } else if (data.getTime() < date.getTime()) {
+    return 'before'
   } else {
-    return equal
+    return 'equal'
   }
 
 }

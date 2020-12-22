@@ -51,7 +51,7 @@ const convertArray = arr => {
   const obj = {}
   arr.forEach( array => {
     obj[array[0]] = array[1]
-  });
+  })
   return obj
 
 }
@@ -73,16 +73,17 @@ const testObject = obj => {
 
 
 // Bai7: Viết 1 hàm trả về các key+value (của 1 object) khác các key truyền vào:
-const getNewObject = (object, arr) => {
-  for (let key in object) {
-    arr.forEach(item => {
-      if(item === key) {
-        delete object.key
+const pickData = (array, obj) => {
+  myObj = {...myObj}
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      if (array.indexOf(key) !== -1) {
+        delete myObj[key]
       }
-    })
+    }
   }
-  return object
-  
+
+  return myObj
 }
 
 
@@ -117,3 +118,7 @@ const createNewArr = students => {
   })
   return newArr
 }
+
+// Bai10: 
+/* sử dụng split (score) 
+*/
