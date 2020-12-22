@@ -73,3 +73,4 @@ const getItem = event => {
   const index = event.target.selectedIndex
   console.log(event.target.options[index].value)
 }
+
