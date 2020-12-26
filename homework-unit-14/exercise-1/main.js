@@ -44,6 +44,7 @@ menuList.innerHTML = contentMenuList.join('')
 
 const showActive = () => {
   const subMenu = document.getElementsByClassName('submenu')
+  
   subMenu.style.display = 'block'
 }
 
