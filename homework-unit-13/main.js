@@ -45,13 +45,30 @@ Số tiền không được phép âm
 Số tiền nhập tối đa là 1000
 Nếu có lỗi hãy alert ra lỗi phù hợp */
 
-const checkMoney = money => {
-  if (money < 0) {
-    alert('Số tiền không được phép âm!')
-  } else if (money > 1000) {
-    alert('Số tiền phải nhỏ hơn 1000!')
+const checkAmount = event => {
+  let value = event.target.value
+  const regex = /^[0-9\.]$/g
+  const match = regex.test(value)
+  
+  if (!match) {
+    value = value.replace(/[^0-9\.]$/g, '')
+  }
+
+  value = event.target.value
+  if (Number(value) > 1000) {
+    console.log('Max amount 1000$')
   }
 }
+
+window.onload = () => {
+  const amount = document.getElementById('amount')
+  amount.addEventListener('keyup', checkAmount)
+
+  setTimeout(() => {
+    amount.removeEventListener('keyup', checkAmount)
+  }, 10000)
+}
+
 
 /* Bai4: Tạo 1 thẻ div
 Khi double click vào thì alert double click */
@@ -70,7 +87,6 @@ const getText = () => {
 Mỗi lần chọn 1 item nào đó, hãy log ra màn hình console item vừa chọn */
 
 const getItem = event => {
-  const index = event.target.selectedIndex
-  console.log(event.target.options[index].value)
+  console.log(event.target.value)
 }
 
